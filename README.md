@@ -42,7 +42,8 @@ The goal is to understand how news sentiment influences stock prices and to deve
 - **Stock Price Dataset**:
   - Analyzed historical stock prices to identify trends, volatility, and technical indicators.
   - Calculated technical indicators like Moving Averages and RSI, EMA, MACD.
-    - SMA(moving avarage):- calculated by taking the average of a set number of closing prices over a specific period. Window Size: The window size determines how many data points are used in the average. A larger window size smooths out fluctuations but reacts slower to price changes.
+    - SMA(moving avarage):- calculated by taking the average of a set number of closing prices over a specific period. Window Size: The window size determines how many data points are used in the average. A larger window size smooths out fluctuations but reacts slower to price changes. here are the visualization for the 7 company SMA with the insight.
+      ![alt text](/SMA.png)
     - RSI:- is a momentum oscillator that measures the speed and change of price movements. It is typically used to identify overbought or oversold conditions in a market. the strength of price movements. Values above 70 suggest an overbought condition, while below 30 suggests oversold conditions.
     - EMA:- EMA is a type of moving average that gives more weight to the most recent prices, making it more responsive to price changes than a simple moving average.
     - MACD:- MACD is a trend-following momentum indicator that shows the relationship between two moving averages of a security’s price.

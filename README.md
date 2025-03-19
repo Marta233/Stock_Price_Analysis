@@ -2,15 +2,15 @@
 
 ## Project Overview
 
-This project explores the relationship between financial news sentiment and stock market movements. It analyzes financial news headlines and their correlation with stock price data for seven major companies:
+This project explores the relationship between financial news sentiment and stock market movements. This project is make me skilled in Data Engineering (DE), Financial Analytics (FA), and Machine Learning Engineering (MLE). It analyzes financial news headlines and their correlation with stock price data for seven major companies:
 
-- Apple (AAPL)
-- Amazon (AMZN)
-- Google (GOOG)
-- Meta (META)
-- Microsoft (MSFT)
-- Nvidia (NVDA)
-- Tesla (TSLA)
+1. Apple (AAPL)
+2. Amazon (AMZN)
+3. Google (GOOG)
+4. Meta (META)
+5. Microsoft (MSFT)
+6. Nvidia (NVDA)
+7. Tesla (TSLA)
 
 The goal is to understand how news sentiment influences stock prices and to develop predictive models that can inform investment strategies.
 
@@ -41,7 +41,11 @@ The goal is to understand how news sentiment influences stock prices and to deve
   - Applied sentiment analysis to headlines to determine the overall tone.
 - **Stock Price Dataset**:
   - Analyzed historical stock prices to identify trends, volatility, and technical indicators.
-  - Calculated technical indicators like Moving Averages and RSI.
+  - Calculated technical indicators like Moving Averages and RSI, EMA, MACD.
+    - SMA(moving avarage):- calculated by taking the average of a set number of closing prices over a specific period. Window Size: The window size determines how many data points are used in the average. A larger window size smooths out fluctuations but reacts slower to price changes.
+    - RSI:- is a momentum oscillator that measures the speed and change of price movements. It is typically used to identify overbought or oversold conditions in a market. the strength of price movements. Values above 70 suggest an overbought condition, while below 30 suggests oversold conditions.
+    - EMA:- EMA is a type of moving average that gives more weight to the most recent prices, making it more responsive to price changes than a simple moving average.
+    - MACD:- MACD is a trend-following momentum indicator that shows the relationship between two moving averages of a security’s price.
 
 ### 3. Visualization
 

@@ -17,22 +17,16 @@ class TextAnalyzer:
     def __init__(self, df):
         """
         Initializes the TextAnalyzer class with a DataFrame.
-        
         :param df: DataFrame containing the text data (e.g., headlines).
         """
         self.df = df
-
-    def remove_unname(self):
-        """Removes the unnamed column from the DataFrame."""
-        self.df = self.df.drop(columns=['Unnamed: 0']) 
-        return self.df
 
     def sentiment_analysis(self):
         """Cleans the headlines and calculates sentiment polarity."""
         self.df['cleaned_headline'] = self.df['headline'].apply(self._clean_text)
         # Extract sentiment and polarity as separate columns
         self.df['sentiment'], self.df['polarity'] = zip(*self.df['cleaned_headline'].apply(self._get_sentiment))
-        return self.df
+        return self.df.head()
 
     def keyword_extraction(self):
         """Extracts keywords and common bigrams from the headlines."""
@@ -166,5 +160,4 @@ class TextAnalyzer:
         feature_names = tfidf_vectorizer.get_feature_names_out()
         for topic_idx, topic in enumerate(lda.components_):
             topic_words[topic_idx] = [feature_names[i] for i in topic.argsort()[:-6:-1]]
-        
         return topic_words
